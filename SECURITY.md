@@ -17,7 +17,5 @@
 If you discover a security vulnerability or sensitive data leakage risk in PHF:
 
 1. Do not report security vulnerabilities through public GitHub issues.
-2. Please submit reports to the maintainers via security advisory or email `security@personalized-humanizer.org`.
+2. Please submit reports to the maintainers via security advisory or email.
 3. Provide a clear description of the vulnerability, reproduction steps, and potential impact.
-
-Maintainers will respond within 48 hours and coordinate a coordinated disclosure timeline.
