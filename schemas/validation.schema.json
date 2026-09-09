@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PHF Validation Report Schema",
+  "type": "object",
+  "properties": {
+    "meaning_fidelity": { "type": "number" },
+    "reasoning_fidelity": { "type": "number" },
+    "voice_fidelity": { "type": "number" },
+    "evidence_discipline": { "type": "number" },
+    "genre_fitness": { "type": "number" },
+    "ai_template_density": { "type": "number" },
+    "rhetorical_overfitting": { "type": "number" },
+    "artificial_imperfection": { "type": "number" },
+    "notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "failure_taxonomies_detected": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

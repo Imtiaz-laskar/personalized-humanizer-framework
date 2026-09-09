@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PHF Humanizer Config Schema",
+  "type": "object",
+  "required": ["model_version", "profile_version", "mode"],
+  "properties": {
+    "model_version": {
+      "type": "string"
+    },
+    "profile_version": {
+      "type": "string"
+    },
+    "mode": {
+      "enum": ["conservative", "balanced", "deep"]
+    },
+    "genre": {
+      "type": "string"
+    },
+    "audience": {
+      "type": "string"
+    },
+    "purpose": {
+      "type": "string"
+    },
+    "technical_level": {
+      "type": "string"
+    }
+  }
+}

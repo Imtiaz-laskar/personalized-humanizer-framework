@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PHF Voice Profile Schema",
+  "type": "object",
+  "required": [
+    "version",
+    "reasoning",
+    "rhetoric",
+    "structure",
+    "sentence",
+    "surface",
+    "genres",
+    "ai_overlay"
+  ],
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "reasoning": {
+      "type": "object"
+    },
+    "rhetoric": {
+      "type": "object"
+    },
+    "structure": {
+      "type": "object"
+    },
+    "sentence": {
+      "type": "object"
+    },
+    "surface": {
+      "type": "object"
+    },
+    "genres": {
+      "type": "object"
+    },
+    "ai_overlay": {
+      "type": "object"
+    },
+    "constitution": {
+      "type": "object",
+      "properties": {
+        "always": { "type": "array", "items": { "type": "string" } },
+        "usually": { "type": "array", "items": { "type": "string" } },
+        "contextual": { "type": "array", "items": { "type": "string" } },
+        "rarely": { "type": "array", "items": { "type": "string" } },
+        "avoid": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

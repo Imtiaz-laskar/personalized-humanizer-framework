@@ -1,0 +1,6 @@
+{
+  "name": "Personalized Humanizer Framework",
+  "description": "Public, user-independent framework and interactive engine for building personalized writing humanizers from an individual's corpus (PHF v1.0).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PHF Corpus Schema",
+  "type": "object",
+  "required": ["samples"],
+  "properties": {
+    "samples": {
+      "type": "array",
+      "items": {
+        "$ref": "sample.schema.json"
+      }
+    }
+  }
+}

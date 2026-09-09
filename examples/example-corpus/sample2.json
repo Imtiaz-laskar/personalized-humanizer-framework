@@ -1,0 +1,12 @@
+{
+  "sample_id": "sample-auth-02",
+  "text": "The common narrative suggests that migrating to microservices automatically reduces operational friction. In practice, it displaces in-process function calls with fallible network boundaries. The real trade-off is not monolithic complexity versus microservice agility; it is organizational coordination overhead versus runtime fault isolation. If your team cannot cleanly define bounded domains within a single deployable artifact, carving that artifact into fourteen distributed network boundaries guarantees distributed state corruption and cascading timeouts. Start by enforcing clean module boundaries first.",
+  "date": "2024-06-20",
+  "genre": "explanatory",
+  "audience": "engineering leads and software architects",
+  "purpose": "challenge simplistic architectural assumptions",
+  "ai_assistance": "none",
+  "editorial_influence": "none",
+  "representative": true,
+  "authenticity_confidence": 0.96
+}

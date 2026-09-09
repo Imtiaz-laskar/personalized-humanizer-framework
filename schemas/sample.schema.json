@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PHF Sample Schema",
+  "type": "object",
+  "required": ["sample_id", "text"],
+  "properties": {
+    "sample_id": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "date": {
+      "type": ["string", "null"]
+    },
+    "genre": {
+      "type": ["string", "null"]
+    },
+    "audience": {
+      "type": ["string", "null"]
+    },
+    "purpose": {
+      "type": ["string", "null"]
+    },
+    "ai_assistance": {
+      "enum": ["none", "low", "medium", "high", "unknown"]
+    },
+    "editorial_influence": {
+      "enum": ["low", "medium", "high", "unknown"]
+    },
+    "representative": {
+      "type": ["boolean", "null"]
+    },
+    "authenticity_confidence": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "maximum": 1
+    }
+  }
+}

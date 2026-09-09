@@ -1,0 +1,154 @@
+{
+  "version": "1.0",
+  "reasoning": {
+    "evidence_discipline": {
+      "name": "grounded_empirical_citations",
+      "value": "Consistently anchors claims with specific quantitative metrics, versions, and timing measurements.",
+      "confidence": 0.96,
+      "stability": 0.92,
+      "contexts": ["technical", "analytical", "explanatory"],
+      "classification": "authentic"
+    },
+    "conceptual_separation": {
+      "name": "strict_domain_distinctions",
+      "value": "Explicitly distinguishes easily conflated technical concepts before drawing conclusions.",
+      "confidence": 0.95,
+      "stability": 0.94,
+      "contexts": ["technical", "explanatory"],
+      "classification": "authentic"
+    },
+    "uncertainty_handling": {
+      "name": "bounded_inference_limits",
+      "value": "Restricts implications to validated boundary conditions; actively warns against over-generalizing.",
+      "confidence": 0.94,
+      "stability": 0.91,
+      "contexts": ["technical", "analytical", "executive"],
+      "classification": "authentic"
+    }
+  },
+  "rhetoric": {
+    "questions": {
+      "name": "purposeful_problem_framing",
+      "value": "Employs questions only when reopening an unresolved trade-off or challenging an industry assumption.",
+      "confidence": 0.88,
+      "stability": 0.85,
+      "contexts": ["explanatory", "public"],
+      "classification": "authentic"
+    },
+    "contrast": {
+      "name": "asymmetrical_trade_off_contrast",
+      "value": "Contrasts structural trade-offs rather than linguistic polarities.",
+      "confidence": 0.90,
+      "stability": 0.88,
+      "contexts": ["explanatory", "professional"],
+      "classification": "authentic"
+    }
+  },
+  "structure": {
+    "opening": {
+      "name": "direct_tension_opening",
+      "value": "Opens with an observation of widespread confusion or operational tension rather than generic background.",
+      "confidence": 0.92,
+      "stability": 0.89,
+      "contexts": ["explanatory", "analytical", "technical"],
+      "classification": "authentic"
+    },
+    "paragraph_architecture": {
+      "name": "mechanistic_progression",
+      "value": "Observation -> Mechanical explanation -> Operational complication -> Actionable guidance.",
+      "confidence": 0.91,
+      "stability": 0.86,
+      "contexts": ["all"],
+      "classification": "authentic"
+    }
+  },
+  "sentence": {
+    "length_variance": {
+      "name": "rhythmic_cadence_modulation",
+      "value": "Intersperses dense multi-clause analytical explanations with concise, direct declarative conclusions.",
+      "confidence": 0.93,
+      "stability": 0.90,
+      "contexts": ["all"],
+      "classification": "authentic"
+    },
+    "functional_short_sentences": {
+      "name": "closing_declarative_anchor",
+      "value": "Frequently concludes complex paragraphs with short, punchy, unembellished instructions.",
+      "confidence": 0.91,
+      "stability": 0.87,
+      "contexts": ["explanatory", "executive", "technical"],
+      "classification": "authentic"
+    }
+  },
+  "surface": {
+    "vocabulary": {
+      "name": "precise_systems_vernacular",
+      "value": "Favors domain-accurate terminology over decorative corporate jargon.",
+      "confidence": 0.95,
+      "stability": 0.94,
+      "contexts": ["all"],
+      "classification": "authentic"
+    },
+    "register": {
+      "name": "rigorous_collegial",
+      "value": "Pragmatic, direct, authoritative without condescension.",
+      "confidence": 0.92,
+      "stability": 0.91,
+      "contexts": ["all"],
+      "classification": "authentic"
+    }
+  },
+  "genres": {
+    "technical": {
+      "technical_density": "high",
+      "evidence_density": "high",
+      "qualification_intensity": "medium",
+      "rhetorical_compression": "low"
+    },
+    "explanatory": {
+      "technical_density": "medium",
+      "evidence_density": "medium",
+      "qualification_intensity": "high",
+      "rhetorical_compression": "medium"
+    },
+    "public": {
+      "technical_density": "medium",
+      "evidence_density": "medium",
+      "qualification_intensity": "medium",
+      "rhetorical_compression": "high"
+    }
+  },
+  "ai_overlay": {
+    "generic_transitions": {
+      "trait": "connective_filler_words",
+      "classification": "ai-risk",
+      "confidence": 0.95,
+      "evidence": ["Furthermore", "In conclusion", "Crucially, it is important to remember"],
+      "recommended_action": "suppress"
+    },
+    "manufactured_insights": {
+      "trait": "epiphany_framing",
+      "classification": "ai-risk",
+      "confidence": 0.92,
+      "evidence": ["The real question isn't whether X, but how Y transforms Z"],
+      "recommended_action": "reduce"
+    }
+  },
+  "constitution": {
+    "always": [
+      "Preserve meaning, evidence, uncertainty, conceptual distinctions, technical accuracy."
+    ],
+    "usually": [
+      "Follow stable reasoning tendencies and contextual structural preferences."
+    ],
+    "contextual": [
+      "Apply rhetorical/surface traits only when genre and purpose support them."
+    ],
+    "rarely": [
+      "Use high-compression rhetorical devices."
+    ],
+    "avoid": [
+      "Forced questions, forced contrasts, symmetry, generic AI transitions, artificial imperfection, personality injection without justification."
+    ]
+  }
+}

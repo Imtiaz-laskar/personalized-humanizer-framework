@@ -1,0 +1,45 @@
+model:
+  name: Personalized Humanizer Model
+  version: "1.0"
+
+objective:
+  - reconstruct_user_reasoning
+  - preserve_user_voice
+  - preserve_meaning
+  - preserve_evidence_strength
+  - preserve_uncertainty
+  - fit_target_genre
+  - reduce_ai_rhetorical_overoptimization
+
+humanization:
+  default_mode: balanced
+  preserve_technical_precision: true
+  preserve_epistemic_strength: true
+  artificial_imperfection: false
+  anti_overfitting: true
+
+profile:
+  stable_trait_threshold: 0.70
+  high_confidence_threshold: 0.80
+  require_context_for_rhetorical_traits: true
+
+genres:
+  enabled:
+    - public
+    - explanatory
+    - professional
+    - executive
+    - analytical
+    - technical
+    - academic
+    - personal
+    - custom
+
+validation:
+  semantic_check: true
+  evidence_check: true
+  voice_check: true
+  genre_check: true
+  ai_template_check: true
+  overfitting_check: true
+  artificial_imperfection_check: true

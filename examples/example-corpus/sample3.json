@@ -1,0 +1,12 @@
+{
+  "sample_id": "sample-auth-03",
+  "text": "During the April migration from PostgreSQL 14 to 16 on our telemetry ingest pipeline, CPU utilization dropped by 18% under sustained synthetic load of 45,000 writes per second. We initially suspected vacuum worker improvements, but further inspection revealed the primary gain stemmed from SIMD-accelerated JSONB extraction and optimized hash join memory layouts. This distinction matters because teams deploying plain relational workloads without JSON payloads should not expect identical double-digit efficiency gains. Validate with your specific schema before rewriting infrastructure timelines.",
+  "date": "2024-09-02",
+  "genre": "analytical",
+  "audience": "infrastructure platform team",
+  "purpose": "prevent unwarranted extrapolation from telemetry benchmarks",
+  "ai_assistance": "none",
+  "editorial_influence": "low",
+  "representative": true,
+  "authenticity_confidence": 0.99
+}

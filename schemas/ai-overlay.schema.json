@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PHF AI Overlay Schema",
+  "type": "object",
+  "properties": {
+    "trait": {
+      "type": "string"
+    },
+    "classification": {
+      "enum": ["authentic", "amplified", "contextual", "ai-risk"]
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "evidence": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "recommended_action": {
+      "enum": ["preserve", "contextualize", "reduce", "suppress"]
+    }
+  }
+}

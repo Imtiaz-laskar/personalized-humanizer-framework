@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PHF Genre Profile Schema",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string" },
+    "sentence_rhythm": { "type": "object" },
+    "paragraph_density": { "type": "object" },
+    "evidence_density": { "type": "object" },
+    "qualification_intensity": { "type": "object" },
+    "rhetorical_compression": { "type": "object" },
+    "question_frequency": { "type": "object" },
+    "analogy_use": { "type": "object" },
+    "contrast_use": { "type": "object" },
+    "conclusion_behavior": { "type": "object" },
+    "technical_density": { "type": "object" }
+  }
+}

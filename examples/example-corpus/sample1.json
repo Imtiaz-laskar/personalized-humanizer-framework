@@ -1,0 +1,12 @@
+{
+  "sample_id": "sample-auth-01",
+  "text": "When evaluating database isolation levels, team discussions frequently conflate serializability with linearizability. Serializability is a property of concurrent transactions executing across multi-row sets, guaranteeing that execution yields the exact same outcome as some purely serial schedule. Linearizability, by contrast, is a single-operation, real-time recency guarantee on individual registers or keys. You can build a strictly serializable system that is not linearizable if it reads from stale snapshots that maintain internal logical consistency. In our production cluster, we encountered this exact confusion during the Q3 replication failover test: queries were functionally serializable, yet application replicas observed stale writes for roughly 420 milliseconds before converging.",
+  "date": "2024-03-15",
+  "genre": "technical",
+  "audience": "distributed systems engineers",
+  "purpose": "clarify concurrency definitions and document failover findings",
+  "ai_assistance": "none",
+  "editorial_influence": "low",
+  "representative": true,
+  "authenticity_confidence": 0.98
+}
